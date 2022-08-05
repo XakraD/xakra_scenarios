@@ -1,7 +1,5 @@
 Config = {}
 
-Config.StartKey = 0xD8F73058 -- U 
-
 Config.Texts = {
     ["titleMenu"] = "escenarios",
     ["subtitleMenu"] = "Elige el escenario",
