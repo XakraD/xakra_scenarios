@@ -202,7 +202,7 @@ AddEventHandler('xakra_scenarios:open_menu', function()
         }, function(data, menu)
             ClearPedTasks(PlayerPedId())
             TaskUseScenarioPoint(PlayerPedId(), data.current.hash , "" , -1.0, true, false, 0, false, -1.0, true)
-		menu.close()
+			menu.close()
         end)
     else
         VORPcore.NotifyLeft(Config.Texts["NotifyTitle"],Config.Texts["NotifySubtitle"],"menu_textures", "cross",3000,"COLOR_PURE_WHITE")
