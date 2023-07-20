@@ -1,7 +1,7 @@
 # xakra_scenarios
 ## Requirements
 - [vorp_core](https://github.com/VORPCORE/vorp-core-lua)
-- [MenuApi](https://github.com/VORPCORE/vorp_stores-lua/files/8743531/menuapi.zip)
+- [vorp_menu](https://github.com/VORPCORE/vorp_menu)
 
 ## Description
 This script is an adaptation of the RicX script named "ricx_scenarios", it has been adapted from RedEM to VORP and uses the menuapi menu. It is used using the "/scenarios" command, you will be able to add this command to the radial menu, and players will be able to interact with the scenarios on the map. Added a notification when no scenario is found.
