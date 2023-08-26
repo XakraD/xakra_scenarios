@@ -202,16 +202,17 @@ AddEventHandler('xakra_scenarios:open_menu', function()
         }, function(data, menu)
             ClearPedTasks(PlayerPedId())
             TaskUseScenarioPoint(PlayerPedId(), data.current.hash , "" , -1.0, true, false, 0, false, -1.0, true)
-        end, function(data, menu)
-            menu.close()
-            ClearPedTasks(PlayerPedId())
-            -- ClearPedTasksImmediately(PlayerPedId())
-
+			menu.close()
         end)
     else
         VORPcore.NotifyLeft(Config.Texts["NotifyTitle"],Config.Texts["NotifySubtitle"],"menu_textures", "cross",3000,"COLOR_PURE_WHITE")
     end
 
+end)
+
+RegisterNetEvent('xakra_scenarios:close_menu')
+AddEventHandler('xakra_scenarios:close_menu', function()
+        ClearPedTasks(PlayerPedId())
 end)
 
 function TaskStartScenarioInPlaceHash(ped, hash, p1, p2, p3, p4, p5)
